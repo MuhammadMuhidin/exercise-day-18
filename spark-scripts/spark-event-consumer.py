@@ -58,6 +58,7 @@ json_df = (
 # Aggregate data with group window 1 day
 total_per_day = (
     json_df
+    .withWatermark('ts', '3 minutes')
     .groupBy(window('ts', '1 day').alias('day'))
     .agg(
         sum('price').alias('total_price'),
