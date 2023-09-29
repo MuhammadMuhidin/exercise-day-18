@@ -6,7 +6,7 @@
 ---
 ```
 ## build		- Build Docker Images (amd64) including its inter-container network.
-## spark		- Run a Spark cluster, rebuild the postgres container, then create the destination tables.
+## spark		- Run a Spark cluster.
 ## jupyter		- Spinup jupyter notebook for testing and validation purposes.
 ## kafka		- Spinup kafka cluster (Kafka+Zookeeper) and Create test-topic.
 ## spark-produce	- Start a Spark streaming job producer.

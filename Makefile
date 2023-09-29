@@ -2,7 +2,7 @@ include .env
 
 help:
 	@echo "## build		- Build Docker Images (amd64) including its inter-container network."
-	@echo "## spark		- Run a Spark cluster, rebuild the postgres container, then create the destination tables."
+	@echo "## spark		- Run a Spark cluster."
 	@echo "## jupyter		- Spinup jupyter notebook for testing and validation purposes."
 	@echo "## kafka		- Spinup kafka cluster (Kafka+Zookeeper) and Create test-topic."
 	@echo "## spark-produce	- Start a Spark streaming job producer."
